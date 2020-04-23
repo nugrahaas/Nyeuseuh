@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="._login.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="-200dp"
+        android:translationY="-200dp"
+        android:rotation="340"
+        android:src="@drawable/splash_water"
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/selamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:fontFamily="@font/opensans_bold"
+        android:text="Selamat"
+        android:textSize="@dimen/_45sdp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/datang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selamat"
+        android:layout_alignLeft="@id/selamat"
+        android:fontFamily="@font/opensans_bold"
+        android:text="Datang"
+        android:textSize="@dimen/_45sdp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/di"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/datang"
+        android:layout_alignLeft="@id/selamat"
+        android:fontFamily="@font/opensans_bold"
+        android:text="di"
+        android:textSize="@dimen/_45sdp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/nyeu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/di"
+        android:layout_alignLeft="@id/di"
+        android:fontFamily="@font/opensans_bold"
+        android:text="Nyeuseuh"
+        android:textSize="@dimen/_45sdp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/et_username_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nyeu"
+        android:layout_alignLeft="@id/nyeu"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        android:layout_marginRight="@dimen/_24sdp"
+        android:fontFamily="@font/opensans_regular"
+        android:hint="Username"
+        android:textSize="@dimen/_20sdp"></EditText>
+
+    <EditText
+        android:id="@+id/et_password_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_username_login"
+        android:layout_alignLeft="@id/nyeu"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        android:layout_marginRight="@dimen/_24sdp"
+        android:inputType="textPassword"
+        android:fontFamily="@font/opensans_regular"
+        android:hint="Password"
+        android:textSize="@dimen/_20sdp"></EditText>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="#2FE7F7F7"
+        android:fontFamily="@font/opensans_regular"
+        android:text="Login"
+        android:onClick="doLogin"
+        android:textSize="@dimen/_20sdp"></Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="Lupa Password? Ingat-ingat!!"></TextView>
+</RelativeLayout>

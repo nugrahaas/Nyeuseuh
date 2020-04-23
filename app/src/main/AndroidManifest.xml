@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nyeuseuh">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity android:name="._fragment._package._form.FormProdukPaket"></activity>
+        <activity android:name="._fragment._package._form.FormPengguna" />
+        <activity android:name="._fragment._package._form.FormOutlet" />
+        <activity android:name="._fragment._package._form.FormMember" />
+        <activity android:name="._fragment._package.Member" />
+        <activity android:name="._fragment._package.Pengguna" />
+        <activity android:name="._fragment._package.ProdukPaket" />
+        <activity android:name="._fragment._package.Outlet" />
+        <activity android:name="._fragment.HomeActivity" />
+        <activity android:name="._login.LoginActivity" />
+        <activity android:name="._splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+    </application>
+
+</manifest>

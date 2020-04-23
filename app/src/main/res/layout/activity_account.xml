@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="._fragment.HomeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/splash_water"></ImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_34sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_power_settings_new_black_24dp"></ImageView>
+
+    <RelativeLayout
+        android:id="@+id/relative_contain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_nama_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_email_account"
+            android:textColor="#000"
+            android:layout_alignLeft="@id/tv_email_account"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="Nugraha Adi Sulistyo"
+            android:textSize="@dimen/_21sdp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_email_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_outlet_account"
+            android:layout_centerHorizontal="true"
+            android:textColor="#C8000000"
+            android:layout_marginBottom="@dimen/_13sdp"
+            android:fontFamily="@font/opensans_regular"
+            android:text="tyoku1792@gmail.com"
+            android:textSize="@dimen/_17sdp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_outlet_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_email_account"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="Outlet"
+            android:textColor="#000"
+            android:textSize="@dimen/_21sdp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_alamat_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_outlet_account"
+            android:layout_alignLeft="@id/tv_outlet_account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Buah Batu"
+            android:textColor="#C8000000"
+            android:textSize="@dimen/_17sdp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_role_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_alamat_account"
+            android:layout_alignLeft="@id/tv_email_account"
+            android:fontFamily="@font/opensans_semibold"
+            android:text="Role"
+            android:textColor="#000"
+            android:textSize="@dimen/_21sdp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_jabatan_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_role_account"
+            android:layout_alignLeft="@id/tv_outlet_account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Owner"
+            android:textColor="#C8000000"
+            android:textSize="@dimen/_17sdp"></TextView>
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignTop="@id/tv_nama_account"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toLeftOf="@id/tv_nama_account"
+            android:src="@drawable/ic_people_black_24dp"></ImageView>
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignTop="@id/tv_outlet_account"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toLeftOf="@id/tv_outlet_account"
+            android:src="@drawable/ic_place_black_24dp"></ImageView>
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignTop="@id/tv_role_account"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toLeftOf="@id/tv_role_account"
+            android:src="@drawable/ic_star_black_24dp"></ImageView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="@dimen/_40sdp"
+            app:cardBackgroundColor="#CD242424"
+            android:layout_below="@id/tv_jabatan_account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:cardCornerRadius="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Edit Profile"
+                android:textColor="#fff"
+                android:textSize="@dimen/_21sdp"></TextView>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Nyeuseuh</string>
+
+    <string-array name="jenis_paket">
+        <item>Kiloan</item>
+        <item>Selimut</item>
+        <item>Bed Cover</item>
+        <item>Kaos</item>
+        <item>Lain</item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7F7F7"
+    tools:context="._fragment.HomeActivity">
+
+    <TextView
+        android:id="@+id/tv_laporan"
+        android:text="Laporan"
+        android:textColor="#000"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_alignLeft="@id/cardview_home"
+        android:fontFamily="@font/opensans_semibold"
+        android:textSize="@dimen/_34sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:layout_alignBaseline="@id/tv_laporan"
+        android:layout_alignRight="@id/cardview_home"
+        android:text="04-12-2019"
+        android:textSize="@dimen/_17sdp"
+        android:fontFamily="@font/opensans_regular"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_home"
+        android:outlineAmbientShadowColor="@color/cardview_dark_background"
+        android:layout_width="@dimen/_260sdp"
+        app:cardCornerRadius="40dp"
+        android:layout_centerInParent="true"
+        android:layout_height="@dimen/_280sdp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_orderan"
+            android:layout_margin="@dimen/_17sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        ></androidx.recyclerview.widget.RecyclerView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_110sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#F44336"
+        android:layout_alignLeft="@id/cardview_home"
+        android:layout_below="@id/cardview_home"
+        android:layout_height="@dimen/_30sdp">
+        <TextView
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:text="Cetak PDF"
+            android:textColor="#fff"
+            android:textSize="@dimen/_15sdp"
+            android:layout_height="match_parent"></TextView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_110sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#3F51B5"
+        android:layout_alignRight="@id/cardview_home"
+        android:layout_below="@id/cardview_home"
+        android:layout_height="@dimen/_30sdp">
+        <TextView
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:text="+ Transaksi"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="#fff"
+            android:layout_height="match_parent"></TextView>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

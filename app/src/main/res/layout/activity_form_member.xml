@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="._fragment._package._form.FormMember">
+
+    <TextView
+        android:id="@+id/tv_outlet_form_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Member"
+        android:textSize="@dimen/_42sdp"
+        android:fontFamily="@font/opensans_semibold"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/_15sdp"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/et_nama_form_member"
+        android:hint="Nama"
+        android:textSize="@dimen/_15sdp"
+        android:fontFamily="@font/opensans_regular"
+        android:layout_below="@id/tv_outlet_form_member"
+        android:layout_margin="@dimen/_17sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <EditText
+        android:id="@+id/et_alamat_form_member"
+        android:hint="Alamat"
+        android:textSize="@dimen/_15sdp"
+        android:fontFamily="@font/opensans_regular"
+        android:layout_below="@id/et_nama_form_member"
+        android:layout_margin="@dimen/_17sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <EditText
+        android:id="@+id/et_notelp_form_member"
+        android:hint="Nomor Telepon"
+        android:textSize="@dimen/_15sdp"
+        android:fontFamily="@font/opensans_regular"
+        android:layout_below="@id/et_alamat_form_member"
+        android:layout_margin="@dimen/_17sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    <RadioGroup
+        android:id="@+id/rg_jenkel_form_member"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_17sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_notelp_form_member"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_l_form_member"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:text="L"
+            android:checked="true"
+            android:buttonTint="#3F51B5"
+            android:fontFamily="@font/opensans_regular"
+            android:textSize="@dimen/_22sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_p_form_member"
+            android:fontFamily="@font/opensans_regular"
+            android:textSize="@dimen/_22sdp"
+            android:text="P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></RadioButton>
+
+    </RadioGroup>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_170sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_25sdp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#3F51B5"
+        android:layout_height="@dimen/_42sdp">
+        <TextView
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:text="Tambah"
+            android:textSize="@dimen/_19sdp"
+            android:textColor="#fff"
+            android:layout_height="match_parent"></TextView>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

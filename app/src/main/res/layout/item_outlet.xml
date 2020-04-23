@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_nomor_item_outlet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. "
+        android:textSize="@dimen/_17sdp"
+        android:fontFamily="@font/opensans_regular"
+        ></TextView>
+
+
+    <TextView
+        android:id="@+id/tv_nama_item_outlet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buah Batu"
+        android:layout_toRightOf="@id/tv_nomor_item_outlet"
+        android:textSize="@dimen/_17sdp"
+        android:fontFamily="@font/opensans_regular"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tv_alamat_item_outlet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jl. Buah Batu No. 211B"
+        android:layout_toRightOf="@id/tv_nomor_item_outlet"
+        android:textSize="@dimen/_14sdp"
+        android:layout_below="@id/tv_nama_item_outlet"
+        android:fontFamily="@font/opensans_regular"
+        ></TextView>
+
+
+</RelativeLayout>
