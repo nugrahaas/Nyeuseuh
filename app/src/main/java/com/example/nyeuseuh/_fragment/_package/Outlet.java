@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.afollestad.materialdialogs.DialogAction;
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.example.nyeuseuh.R;
 import com.example.nyeuseuh._fragment.PackageAdapter;
@@ -69,6 +70,7 @@ public class Outlet extends AppCompatActivity {
                 OutletAdapter adapter = new OutletAdapter( postArrayList);
                 mRecyclerView.setAdapter(adapter);
 
+
                 final String finalId = id;
                 mRecyclerView.addOnItemTouchListener(new RecyclerItemClickListener(Outlet.this, new RecyclerItemClickListener.OnItemClickListener() {
                     @Override
@@ -77,12 +79,38 @@ public class Outlet extends AppCompatActivity {
 
                         Toast.makeText(Outlet.this, "Card at " + position + " is clicked", Toast.LENGTH_SHORT).show();
 
+
                         final MaterialDialog fotoDialog = new MaterialDialog.Builder(Outlet.this)
                                 .title("Aksi")
                                 .positiveText("Edit")
                                 .negativeText("Delete")
                                 .autoDismiss(false)
                                 .show();
+
+                        fotoDialog.getActionButton(DialogAction.POSITIVE).setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Intent intent = new Intent(Outlet.this, FormOutlet.class);
+                                intent.putExtra("PostID", finalId);
+                                startActivity(intent);
+                                finish();
+
+                                fotoDialog.dismiss();
+                            }
+                        });
+                        fotoDialog.getActionButton(DialogAction.NEGATIVE).setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                DatabaseReference dR = FirebaseDatabase.getInstance().getReference("outlet").child(finalId);
+
+                                //removing artist
+                                dR.removeValue();
+
+                                Toast.makeText(getApplicationContext(), "Outlet Deleted", Toast.LENGTH_LONG).show();
+
+                                fotoDialog.dismiss();
+                            }
+                        });
 
                     }
 
